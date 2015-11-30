@@ -5,6 +5,10 @@ app.config(function($routeProvider){
     controller: 'palindromeCtrl',
     templateUrl: "palindromeView.html"
   });
+  $routeProvider.when('/view2',{
+  // controller: 'ctrlDisplay',
+  templateUrl: "view2.html"
+});
 
   $routeProvider.otherwise({redirectTo:"/palindromeView"})
 
