@@ -5,16 +5,26 @@
 </head>
 <body ng-app="serviceModule">
 
+   <div class="content">
+      <ul>
+        <li><a class="tab"href = "#/palindromeView">Is it a palindrome?</a></li>
+        <li><a href = "#/view2" class="tab">API Feed</a></li>
+      </ul>
 
-<ul>
-	<li ng-repeat='picture in pictures'>
-		
-	</li>
-</ul>
+      <h1>Hello</h1>
+
+      <ng-view ng-repeat='picture in pictures'></ng-view>
+     </div>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+<script
+<script src="script.js"></script>
+<script src="palindromeCtrl.js"></script>
+<script src="palindromeService.js"></script>
+
 
 </body>
 </html>
