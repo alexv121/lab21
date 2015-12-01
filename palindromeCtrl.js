@@ -14,13 +14,13 @@ app.controller('palindromeCtrl', function($scope, palindromeService) {
     word = word.split(' ').join('').toLowerCase();
 
     if (word === reverse(word)){
+        $scope.not="";
         return 'Yay, its true';
         }
+        $scope.not="not";
         return 'Nope, false';
 
-
   }
-
     console.log(isPalindrome(word));
     palindromeService.save(word)
 
