@@ -4,9 +4,9 @@
 <p> Well, wonder no more! Check it below!</p>
 
 <form>
-  <input type="text" placeholder="Race Car" ng-model="word"/>
+  <input type="text" placeholder="Race Car" ng-model="word"aria-label="Toggle ngHide"/>
   <button ng-click="store(word)">Check It</button>
 </form>
 
 
-<h1>{{word}} is {{not}} a palindrome</h1>
+<div data-wordresult></div>
