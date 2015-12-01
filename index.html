@@ -2,12 +2,12 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css" />
-
+<meta charset="UTF-8">
 	<title>Lab 21</title>
 </head>
-<body>
+<body ng-app="serviceModule">
 
-  <body ng-app="serviceModule">
+
     <div class="content">
 
       <ul>
@@ -17,9 +17,10 @@
 			</ul>
 
      </div>
+     <div ng-repeat='picture in pictures'></div>
 		 <ng-view></ng-view>
 
-  </body>
+ 
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
@@ -30,6 +31,13 @@
 <script src="palindromeCtrl.js"></script>
 <script src="palindromeService.js"></script>
 <script src="palindromeDir.js"></script>
+
+
+<script src="script.js"></script>
+<script src="palindromeCtrl.js"></script>
+<script src="palindromeService.js"></script>
+<script src="controllerView2.js"></script>
+<script src="service.js"></script>
 
 
 </body>

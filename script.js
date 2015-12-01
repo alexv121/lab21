@@ -2,8 +2,9 @@ var app = angular.module('serviceModule', ['ngRoute']);
 
 app.config(function($routeProvider){
 
-  $routeProvider.when('/',{
 
+  $routeProvider
+  .when('/',{
 
   })
 
@@ -12,11 +13,16 @@ app.config(function($routeProvider){
     templateUrl: "palindromeView.html"
   })
 
-  $routeProvider.when('/view2',{
+  .when('/view2',{
   // controller: 'ctrlDisplay',
+  controller: 'controllerView2',
   templateUrl: "view2.html"
 });
 
   $routeProvider.otherwise({redirectTo:"/palindromeView"})
 
+
 });
+
+
+
