@@ -1,1 +1,13 @@
-style.css
+body {
+  background-color: #5EB6E4;
+}
+
+.content ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 1em;
+}
+.tab{
+  font-size: 1.5em;
+  color: #4C2355
+}

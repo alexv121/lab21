@@ -1,7 +1,7 @@
 var app = angular.module('serviceModule')
 
 app.factory('palindromeService', function(){
-  var storedWord = 'word';
+  var storedWord = '';
 
   return {
     save: function(word){ //this is an object - key value pair

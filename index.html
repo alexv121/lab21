@@ -1,21 +1,24 @@
 <!doctype html>
 <html>
 <head>
+	<link rel="stylesheet" href="style.css" />
+
 	<title>Lab 21</title>
 </head>
 <body>
 
   <body ng-app="serviceModule">
     <div class="content">
+
       <ul>
+				<li><a class="tab"href = "index.html">Home</a></li>
         <li><a class="tab"href = "#/palindromeView">Is it a palindrome?</a></li>
         <li><a class="tab"href = "#/view2">API Feed</a></li>
-      </ul>
+			</ul>
 
-      <h1>Hello</h1>
-
-      <ng-view></ng-view>
      </div>
+		 <ng-view></ng-view>
+
   </body>
 
 
