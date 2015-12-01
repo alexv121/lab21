@@ -26,8 +26,6 @@ app.controller('palindromeCtrl', function($scope, palindromeService) {
 
   };
 
-  $scope.showPopup = [];
-
 
     var wordCheck = palindromeService.get() //display ctrl
     $scope.word =  wordCheck.word;
