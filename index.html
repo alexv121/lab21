@@ -2,21 +2,12 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css" />
-
+<meta charset="UTF-8">
 	<title>Lab 21</title>
 </head>
 <body ng-app="serviceModule">
 
-   <div class="content">
-      <ul>
-        <li><a class="tab"href = "#/palindromeView">Is it a palindrome?</a></li>
-        <li><a href = "#/view2" class="tab">API Feed</a></li>
-      </ul>
-
-      <h1>Hello</h1>
-
-      <ng-view ng-repeat='picture in pictures'></ng-view>
-     </div>
+   
 
 
 
@@ -30,9 +21,10 @@
 			</ul>
 
      </div>
+     <ng-view ng-repeat='picture in pictures'></ng-view>
 		 <ng-view></ng-view>
 
-  </body>
+ 
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
