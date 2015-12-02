@@ -6,28 +6,27 @@ app.controller('palindromeCtrl', function($scope, palindromeService) {
   $scope.store =  function(word){
 
     function reverse(word){
-    return word.split('').reverse().join('');
+      return word.split('').reverse().join('');
 
   }
 
-  function isPalindrome(word){
-    word = word.split(' ').join('').toLowerCase();
+    function isPalindrome(word){
+      word = word.split(' ').join('').toLowerCase();
 
-    if (word === reverse(word)){
-        $scope.not="";
-        return 'Yay, its true';
-        }
-        $scope.not="not";
-        return 'Nope, false';
+      if (word === reverse(word)){
+          $scope.not="";
+          return 'Yay, its true';
+          }
+          $scope.not="not";
+          return 'Nope, false';
 
   }
-    console.log(isPalindrome(word));
-    palindromeService.save(word)
+  console.log(isPalindrome(word));
+  palindromeService.save(word)
 
   };
 
-
-    var wordCheck = palindromeService.get() //display ctrl
-    $scope.word =  wordCheck.word;
+  var wordCheck = palindromeService.get() //display ctrl
+  $scope.word =  wordCheck.word;
 
   });
