@@ -7,36 +7,28 @@
 </head>
 <body ng-app="serviceModule">
 
-    <div class="content">
+<div class="content">
 
-      <ul>
-				<li><a class="tab"href = "index.html">Home</a></li>
+    <ul>
+        <li><a class="tab"href = "index.html">Home</a></li>
         <li><a class="tab"href = "#/palindromeView">Is it a palindrome?</a></li>
         <li><a class="tab"href = "#/view2">API Feed</a></li>
-			</ul>
+    </ul>
 
-     </div>
-     <div ng-repeat='picture in pictures'></div>
-		 <ng-view></ng-view>
+</div>
+     
+<div ng-repeat='picture in pictures'></div>
 
-
-
+<ng-view></ng-view>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
-<script src="script.js"></script>
-
-<script src="palindromeCtrl.js"></script>
-<script src="palindromeService.js"></script>
-
-
 <script src="script.js"></script>
 <script src="palindromeCtrl.js"></script>
 <script src="palindromeService.js"></script>
 <script src="controllerView2.js"></script>
 <script src="service.js"></script>
 <script src="palindromeDir.js"></script>
-
 
 </body>
 </html>
